@@ -1,0 +1,11 @@
+server:
+  port: 9051 # Local Backend
+
+expo:
+  push:
+    access-token: "mock"
+    api-url: "http://localhost:9056"
+    allow-insecure-api-url: true
+    backend: local
+    local:
+      receipt-delay-seconds: 5

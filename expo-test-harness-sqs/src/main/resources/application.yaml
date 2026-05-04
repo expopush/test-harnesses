@@ -1,0 +1,18 @@
+server:
+  port: 9053
+
+# Spring Cloud AWS will now use the Default Provider Chain
+# It will check: Environment Variables, System Properties, then ~/.aws files
+
+expo:
+  push:
+    access-token: "mock"
+    api-url: "http://localhost:9056"
+    allow-insecure-api-url: true
+    backend: sqs
+    sqs:
+      # If not set, this will default to us-east-1 from the library properties
+      # region: us-east-1 
+      push-queue-name: "expo-push-notifications"
+      receipt-queue-name: "expo-push-receipts"
+      receipt-delay-seconds: 5

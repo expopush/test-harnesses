@@ -1,0 +1,12 @@
+server:
+  port: 9052 # H2 Backend
+
+expo:
+  push:
+    access-token: "mock"
+    api-url: "http://localhost:9056"
+    allow-insecure-api-url: true
+    backend: h2
+    h2:
+      file-path: "./harness-db"
+      receipt-delay-seconds: 5
