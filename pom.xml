@@ -13,6 +13,30 @@
     <description>Test harnesses for verifying Expo Push implementations across different backends (H2, Local, SQS).</description>
     <url>https://expopush.dev</url>
 
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>expopush</id>
+            <name>Expo Push Team</name>
+            <email>admin@expopush.dev</email>
+            <organization>Expo Push</organization>
+            <organizationUrl>https://expopush.dev</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/expopush/test-harnesses.git</connection>
+        <developerConnection>scm:git:ssh://github.com:expopush/test-harnesses.git</developerConnection>
+        <url>https://github.com/expopush/test-harnesses/tree/main</url>
+    </scm>
+
     <modules>
         <module>expo-test-harness-h2</module>
         <module>expo-test-harness-local</module>
@@ -23,6 +47,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.deploy.skip>true</maven.deploy.skip>
     </properties>
 
 </project>
