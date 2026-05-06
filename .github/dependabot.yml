@@ -13,6 +13,8 @@ updates:
         applies-to: security-updates
         patterns:
           - "*"
+    reviewers:
+       - "jshipman42"
 
   - package-ecosystem: "github-actions"
     directory: "/"
