@@ -9,6 +9,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # required to upload dependency graph snapshots
     steps:
     - uses: actions/checkout@v6
 
