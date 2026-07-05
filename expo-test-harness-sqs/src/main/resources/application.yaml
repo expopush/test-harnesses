@@ -10,6 +10,10 @@ expo:
     api-url: "http://localhost:9056"
     allow-insecure-api-url: true
     backend: sqs
+    security:
+      # Test harness only — payload encryption is ON by default and would require a
+      # 256-bit Base64 key (expo.push.security.encryption-key) at startup.
+      encrypt-payloads: false
     sqs:
       # If not set, this will default to us-east-1 from the library properties
       # region: us-east-1 

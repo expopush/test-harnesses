@@ -39,6 +39,14 @@ jobs:
         languages: ${{ matrix.language }}
         build-mode: 'none'
 
+    # The harnesses track the starter's unreleased SNAPSHOT, which is not published to
+    # Maven Central — build and install it from source first. Remove this step (and pin
+    # a released starter version in the harness poms) once 1.0.0-RC2 is on Central.
+    - name: Build expo-push SNAPSHOT dependency
+      run: |
+        git clone --depth 1 https://github.com/expopush/expo-push.git ../expo-push
+        mvn -B -f ../expo-push/pom.xml install -DskipTests
+
     - name: Build for CodeQL
       run: mvn -B clean compile -DskipTests
 
