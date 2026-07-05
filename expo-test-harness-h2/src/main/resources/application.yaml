@@ -7,6 +7,10 @@ expo:
     api-url: "http://localhost:9056"
     allow-insecure-api-url: true
     backend: h2
+    security:
+      # Test harness only — payload encryption is ON by default and would require a
+      # 256-bit Base64 key (expo.push.security.encryption-key) at startup.
+      encrypt-payloads: false
     h2:
       file-path: "./harness-db"
       receipt-delay-seconds: 5
