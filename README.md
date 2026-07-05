@@ -2,8 +2,8 @@
 
 [![Java CI (Test Harnesses)](https://github.com/expopush/test-harnesses/actions/workflows/build.yml/badge.svg)](https://github.com/expopush/test-harnesses/actions/workflows/build.yml)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Java Version](https://img.shields.io/badge/Java-17-ED8B00?logo=openjdk)](https://www.oracle.com/java/technologies/downloads/#java17)
-[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-6DB33F?logo=springboot)](https://spring.io/projects/spring-boot)
+[![Java Version](https://img.shields.io/badge/Java-21-ED8B00?logo=openjdk)](https://www.oracle.com/java/technologies/downloads/#java21)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4.x-6DB33F?logo=springboot)](https://spring.io/projects/spring-boot)
 [![Dependabot](https://img.shields.io/badge/Dependabot-enabled-brightgreen.svg?logo=dependabot)](https://github.com/expopush/test-harnesses/network/updates)
 
 A collection of Spring Boot applications designed to act as "harnesses" for testing the `expo-push` library against various real-world backends.
