@@ -2,3 +2,7 @@ target/
 *.iml
 .idea/
 .DS_Store
+
+# H2 database files created by local harness runs
+*.mv.db
+*.trace.db
