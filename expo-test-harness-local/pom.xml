@@ -17,7 +17,7 @@
 
     <properties>
         <java.version>21</java.version>
-        <expo-push.version>1.0.0-RC2-SNAPSHOT</expo-push.version>
+        <expo-push.version>1.0.0-RC2</expo-push.version>
     </properties>
 
     <dependencies>
