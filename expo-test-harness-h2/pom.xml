@@ -42,6 +42,18 @@
         </dependency>
     </dependencies>
 
+    <dependencyManagement>
+        <dependencies>
+            <!-- LDAP injection fix (GHSA); pulled in at 1.81.1 via spring-cloud-starter.
+                 Remove once spring-cloud manages >= 1.84. Mirrors the pin in expo-push. -->
+            <dependency>
+                <groupId>org.bouncycastle</groupId>
+                <artifactId>bcprov-jdk18on</artifactId>
+                <version>1.84</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <build>
         <plugins>
             <plugin>
